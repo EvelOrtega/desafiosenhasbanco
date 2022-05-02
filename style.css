@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600&display=swap");
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Radio Canada", sans-serif;
+}
+header {
+  padding: 0 10px;
+  width: 100%;
+  height: 80px;
+}
+.logo,
+.logo img {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.painel {
+  width: 320px;
+  height: 420px;
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.controles {
+  width: 320px;
+  height: fit-content;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.controles button {
+  width: 120px;
+  height: 20px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #0094c6;
+  color: #d6d5c9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.controles button:hover {
+  background-color: #d6d5c9;
+  color: #0094c6;
+}
+
+#preferenciais {
+  width: 50%;
+  height: 310px;
+}
+#gerais {
+  width: 50%;
+  height: 310px;
+  padding-left: 20px;
+  border-left: #0094c6 solid 1px;
+}
+#senha-atual {
+  width: 320px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+#botão-chamar {
+  margin-left: -40px;
+}
+/*utility*/
+.flex-box {
+  display: flex;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+/*text*/
+.bold {
+  font-weight: 800;
+}
+
+/*colors*/
+.bg-dark {
+  background-color: #2f2d2e;
+}
+.bg-light {
+  background-color: #d6d5c9;
+}
+.bg-blue {
+  background-color: #0094c6;
+}
+.color-dark {
+  color: #2f2d2e;
+}
+.color-light {
+  color: #d6d5c9;
+}
+.color-blue {
+  color: #0094c6;
+}

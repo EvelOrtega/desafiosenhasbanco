@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Senhas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="bg-dark flex-box flex-align-center">
+    <div class="logo bg-light"><img src="logo.png" alt="" /></div>
+    <div>
+      <h1 class="color-light">Banco <span class="color-blue">Gamer</span></h1>
+    </div>
+  </header>
+
+  <body class="bg-light flex-box flex-column flex-align-center">
+    <div class="painel bg-dark">
+      <h2 class="color-blue">Fila de espera</h2>
+      <div class="flex-box flex-between">
+        <div id="preferenciais" class="color-blue bold">
+          <span class="color-blue">Preferenciais</span> <br />
+          <span id="lista-de-chamada-preferencial"></span>
+        </div>
+        <div id="gerais" class="color-blue bold">
+          <span>Gerais</span> <br />
+          <span id="lista-de-chamada-geral"></span>
+        </div>
+      </div>
+    </div>
+    <div
+      id="senha-atual"
+      class="flex-box flex-center flex-align-center flex-space-around bg-dark color-blue"
+    >
+      <h2>Chamando:</h2>
+      <span class="bold" id="senha"></span>
+    </div>
+    <div class="controles bg-dark">
+      <div class="flex-box flex-space-around">
+        <button
+          onclick="limparListaGeral(), criaSenhaGeral(), atualizarListaGeral() "
+        >
+          Criar Geral
+        </button>
+        <button
+          onclick="cancelarSenhaGeral(), limparListaGeral(), atualizarListaGeral()"
+        >
+          Cancelar Geral
+        </button>
+        <select name="senha" id="senha-geral"></select>
+      </div>
+
+      <div class="flex-box flex-space-around">
+        <button
+          onclick="limparListaPreferencial(), criaSenhaPreferencial(), atualizarListaPreferencial()"
+        >
+          Gerar Pref.
+        </button>
+        <button
+          onclick="cancelarSenhaPreferencial(), limparListaPreferencial(), atualizarListaPreferencial()"
+        >
+          Cancelar Pref.
+        </button>
+        <select name="senha" id="senha-preferencial"></select>
+      </div>
+      <div id="botão-chamar" class="flex-box flex-center">
+        <button
+          onclick="chamarSenha(),limparListaGeral(), limparListaPreferencial(), atualizarListaGeral(), atualizarListaPreferencial()"
+        >
+          Chamar
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
